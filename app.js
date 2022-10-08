@@ -14,10 +14,12 @@ const fetchPokemon = () => {
             name:data.name,
             id:data.id,
             image:data.sprites['front_default'],
-            type:data.types.map( (type) => type.type.name).join(', ')
-
+            type:data.types.map( (type) => type.type.name),
+            base:data.base_experience,
+            weight:data.weight,
+            //move:data.moves.map( (moves) => moves.move.name),
         }))
-        //console.log(pokemon)
+        //console.log(datas)
         displayPokemon(pokemon)
     })
 }
@@ -29,7 +31,9 @@ const displayPokemon = (pokemon) => {
     <li class="card">
         <img class="card-image" src="${poke.image}"/>
         <h2 class="card-title">${poke.id}. ${poke.name}</h2>
-        <p class= "card-subtitle">${poke.type}</p>
+        <p class= "card-subtitle type">Type: ${poke.type}</p>
+        <p class= "card-subtitle">Base Experience: ${poke.base}</p>
+        <p class= "card-subtitle">Weight: ${poke.weight}</p>
     </li>
     `).join('')
     pokedex.innerHTML=pokemonHTMLString
