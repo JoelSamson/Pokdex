@@ -58,17 +58,4 @@ const displayPokemon = (pokemon) => {
 
 fetchPokemon();
 
-document.addEventListener('DOMContentLoaded', function() {
-    const body = document.body;
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-    toggleSwitch.addEventListener('change', switchTheme, false);
-
-    function switchTheme(e) {
-        if (e.target.checked) {
-            body.classList.add('dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-        }
-    }
-});
