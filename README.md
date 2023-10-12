@@ -12,6 +12,10 @@ This project is a simple web application that utilizes the Pokemon API to create
 
 The application makes use of the Pokemon API to fetch information about the first 150 Pokemon species. It then dynamically creates cards for each Pokemon, displaying details such as ID, name, type, base experience, and weight. The information is presented in a grid layout for easy navigation and readability.
 
+## Hosting
+
+This project is hosted on Netlify, a powerful platform for hosting modern web projects. You can access the live version of the Pokedex here: [Pokedex Live Demo](https://pokedex-simulator.netlify.app/)
+
 ## Features
 
 - **Pokemon Information:** View details about the first 150 Pokemon, including their names, IDs, types, base experience, and weight.
@@ -25,7 +29,7 @@ The application makes use of the Pokemon API to fetch information about the firs
 
 ## Preview
 
-pokedex-simulator.netlify.app/
+- [Link to Website](https://pokedex-simulator.netlify.app/)
 
 ## Acknowledgements
 
