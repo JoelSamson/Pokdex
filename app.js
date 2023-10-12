@@ -1,3 +1,38 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.body;
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    // Check the user's preference for dark mode from localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    
+    // Set the initial theme based on user preference
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+    }
+
+    // Toggle dark mode based on user interaction
+    toggleSwitch.addEventListener('change', switchTheme, false);
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', null);
+        }
+    }
+});
+In this implementation, the CSS custom properties --bg-color-light, --text-color-light, --bg-color-dark, and --text-color-dark are used to define the background and text colors for light and dark mode. The JavaScript code listens for changes in the theme switch, toggling the dark-mode class on the body element accordingly and saving the user's preference in localStorage.
+
+This way, the user's selected theme (light or dark mode) will persist even after they reload the page or navigate to different parts of your website.
+
+
+
+
+
+
 const pokdex=document.getElementById('pokdex')
 console.log('pokedex')
 
