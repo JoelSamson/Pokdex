@@ -25,7 +25,7 @@ The application makes use of the Pokemon API to fetch information about the firs
 
 ## Preview
 
-![Pokedex Preview](screenshot.png)
+pokedex-simulator.netlify.app/
 
 ## Acknowledgements
 
