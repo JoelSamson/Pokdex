@@ -24,9 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-In this implementation, the CSS custom properties --bg-color-light, --text-color-light, --bg-color-dark, and --text-color-dark are used to define the background and text colors for light and dark mode. The JavaScript code listens for changes in the theme switch, toggling the dark-mode class on the body element accordingly and saving the user's preference in localStorage.
 
-This way, the user's selected theme (light or dark mode) will persist even after they reload the page or navigate to different parts of your website.
 
 
 
